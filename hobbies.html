@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Hobbies</title>
+    <style>
+        /* General page styling */
+        body {
+            background-color: #ffe4e1;
+            font-family: Arial, sans-serif;
+            color: #d63384;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #ff9dbd;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: #ffd6e7;
+            border: 2px solid #ff69b4;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.3);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ff69b4;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #b93c7f;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .image-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Modal styling */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: 10% auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Close button */
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">✨ My Hobbies ✨</div>
+
+    <div class="container">
+        <!-- Drawing Section -->
+        <div class="section">
+            <h2>🎨 Drawing</h2>
+            <p>I love to sketch and bring my imagination to life on paper. It's my way of expressing creativity.</p>
+            <div class="image-container">
+                <img src="rose_btb.jpg" alt="Drawing 1" onclick="openModal(this)">
+                <img src="lucy_wc.jpg" alt="Drawing 2" onclick="openModal(this)">
+                <img src="sunflower.jpg" alt="Drawing 3" onclick="openModal(this)">
+            </div>
+        </div>
+
+        <!-- Gaming Section -->
+        <div class="section">
+            <h2>🎮 Gaming</h2>
+            <p>Playing Mobile Legends and Genshin Impact is one of my favorite ways to relax and have fun.</p>
+            <div class="image-container">
+                <img src="game_ml.jpg" alt="Mobile Legends" onclick="openModal(this)">
+                <img src="game_genshin.jpg" alt="Genshin Impact" onclick="openModal(this)">
+                <img src="setup.jpg" alt="My Devices" onclick="openModal(this)">
+            </div>
+        </div>
+
+        <!-- Reading Section -->
+        <div class="section">
+            <h2>📚 Reading</h2>
+            <p>From novels to short stories, I love exploring different worlds and perspectives through books.</p>
+            <div class="image-container">
+                <img src="ebook.jpg" alt="Ebook" onclick="openModal(this)">
+                <img src="books.jpg" alt="My Novels" onclick="openModal(this)">
+                <img src="manhwa.jpg" alt="Manga/Manhwa" onclick="openModal(this)">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Enlarged Image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        // Function to open the modal and display the clicked image
+        function openModal(img) {
+            document.getElementById("imageModal").style.display = "block";
+            document.getElementById("modalImage").src = img.src;
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

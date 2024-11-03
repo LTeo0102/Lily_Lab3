@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe4e1;
+            color: #d63384;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: auto;
+            box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.3);
+            background-color: rgba(255, 105, 180, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        table, th, td {
+            border: 2px solid rgba(255, 105, 180, 0.3);
+            border-collapse: collapse;
+        }
+
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #FFD1DC;
+        }
+
+        tr:nth-child(even) {
+            background-color: #E8D8D5;
+        }
+
+        td img {
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgba(255, 105, 180, 0.4);
+        }
+
+        td:first-child {
+            font-weight: bold;
+            color: #d63384;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #d63384;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr> 
+            <td><b>Name</b></td>
+            <td>Lily Teo</td>
+            <td><img src="dp.jpg" alt="Your Photo" width="100px"></td>
+        </tr>
+        <tr>
+            <td><b>Date of Birth</b></td>
+            <td colspan="2">02 January 2003</td>
+        </tr>
+        <tr>
+            <td><b>Religion</b></td>
+            <td colspan="2">Islam</td>
+        </tr>
+        <tr>
+            <td><b>Race</b></td>
+            <td colspan="2">Chinese</td>
+        </tr>
+        <tr>
+            <td rowspan="4"><b>Address</b></td>
+            <td style="text-align: left;"><b>Street</b></td>
+            <td>Jalan Kencana 1A/2</td>
+        </tr>
+        <tr>
+            <td><b>Town</b></td>
+            <td>Sri Gading</td>
+        </tr>
+        <tr>
+            <td><b>District</b></td>
+            <td>Batu Pahat District</td>
+        </tr>
+        <tr>
+            <td><b>State</b></td>
+            <td>Johor</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><b>Contact</b></td>
+            <td style="text-align: left;"><b>Mobile Phone</b></td>
+            <td>+60 177302440</td>
+        </tr>
+        <tr>
+            <td><b>Social Media</b></td>
+            <td>@lilyteo_03</td>
+        </tr>
+        <tr>
+            <td><b>Website</b></td>
+            <td><a href="https://github.com/LTeo0102" target="_blank">https://github.com/LTeo0102</a></td>
+        </tr>
+        <tr>
+            <td><b>Course and Institution</b></td>
+            <td colspan="2">Software Engineering at Universiti Tun Hussein Onn Malaysia</td>
+        </tr>
+        <tr>
+            <td><b>Programming Skills</b></td>
+            <td colspan="2">Java, C Programming, HTML, C#, Python</td>
+        </tr>
+        <tr>
+            <td><b>Personal Interest</b></td>
+            <td colspan="2">Money, Money, Money</td>
+        </tr>
+        <tr>
+            <td><b>Future Plan in 2025</b></td>
+            <td colspan="2">To earn more money</td>
+        </tr>
+    </table>
+</body>
+</html>

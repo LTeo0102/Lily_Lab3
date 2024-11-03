@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lily's Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffe4e1;
+            font-family: Arial, sans-serif;
+            color: #d63384;
+        }
+
+        /* Logo Section */
+.logo {
+    width: 100vw; /* Full viewport width */
+    height: 200px; /* Set the header height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%; /* Fill the header height */
+    object-fit: cover; /* Crop to fit the header dimensions */
+}
+
+        /* Navigation Styling */
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #ff9dbd;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #ffe4e1;
+        }
+
+        /* Content Section */
+        .content {
+            display: flex;
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+
+        /* Sidebar */
+        .side-bar {
+            background-color: #ffd6e7;
+            flex-basis: 25%;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.3);
+        }
+
+        .side-bar a {
+            display: block;
+            color: #b93c7f;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 10px 0;
+            border-bottom: 1px solid #ff9dbd;
+            transition: color 0.3s ease;
+        }
+
+        .side-bar a:hover {
+            color: #d63384;
+        }
+
+        /* Body Area */
+        .body-area {
+            flex-basis: 70%;
+            padding: 20px;
+            background-color: #ffe4e1;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.3);
+        }
+
+        .body-area img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .body-area ul {
+            list-style-type: square;
+            color: #d63384;
+            text-align: left;
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .body-area p {
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #b93c7f;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #ff9dbd;
+            color: white;
+            padding: 15px 0;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="headermoneypink.png" alt="Header Image">
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <a href="https://www.google.com">Google</a>
+            <a href="https://www.uthm.edu.my">UTHM</a>
+            <a href="https://author.uthm.edu.my/">Author</a>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <!-- Sidebar -->
+            <div class="side-bar">
+                <a href="biodata.html">My Biodata</a>
+                <a href="hobbies.html">My Hobbies</a>
+                <a href="campus.html">My Campus Life</a>
+            </div>
+
+            <!-- Main Body Area -->
+            <div class="body-area">
+                <img src="photo.jpg" alt="Lily's Photo">
+                <ul>
+                    <li>My name is Lily Natasha Binti Teo Ah Hing@Tieo Ah Hing. I prefer to be called Lily. My social media account is mostly named Lily Teo.</li>
+                    <li>I am a UTHM student studying Software Engineering for my degree.</li>
+                    <li>I work as an insurance agent for Great Eastern, tutor at Pusat Tuisyen Aktif Fokus Maju, and am a new Grab driver. I juggle all these roles simultaneously.</li>
+                </ul>
+                <p>Why? Because I love to buy lots of things and go cafe hunting.<br>To afford it all, working hard is the only solution. ^_^</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            &copy 2024 Lily Teo
+        </div>
+
+    </div>
+    
+</body>
+</html>
